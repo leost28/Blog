@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { Post } from './interface/post.interface';
 
@@ -15,7 +16,11 @@ export class PostService {
   insertPost(newPost: any): void{
     this.arrPost.push(newPost);
     console.log(this.arrPost);
-    
+  }
 
+  getAll(): Promise<Post[]> { 
+    return new Promise ((resolve, reject) =>{
+      resolve(this.arrPost);
+    })
   }
 }

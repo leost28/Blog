@@ -1,0 +1,12 @@
+.menu{
+    background: rgb(71, 99, 255);
+}
+
+.btn-primary:hover{
+    border: 1px solid white;
+}
+
+.container{
+    border: 1px solid rgb(71, 99, 255);
+    padding: 15px;
+}

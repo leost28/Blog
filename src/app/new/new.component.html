@@ -4,14 +4,16 @@
     <form [formGroup]="newPost" (ngSubmit)="onSubmit()">
 
         <div class="form-group">
-            <input class="form-control" type="text" name="titulo" placeholder="titulo" formControlName="titulo">
+            <label  class="form-label">Título</label>
+            <input class="form-control" type="text" name="titulo" formControlName="titulo">
             <div class="error" *ngIf="newPost.controls.titulo.errors && newPost.controls.titulo.touched">
                 introduce un titulo
             </div>
         </div>
 
         <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="¿Qué quieres contar hoy?"
+            <label  class="form-label">¿Qué quieres contar hoy?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" 
                 rows="3" formControlName="texto"></textarea>
             <div class="error" *ngIf="newPost.controls.texto.errors && newPost.controls.texto.touched">
                 introduce un texto
@@ -20,21 +22,23 @@
 
 
         <div class="form-group">
-            <label class="form-label"></label>
-            <input type="text" class="autor" placeholder="autor/a" formControlName="autor" class="form-control">
+            <label class="form-label">autor/a</label>
+            <input type="text" class="autor" formControlName="autor" class="form-control">
         </div>
 
         <div class="form-group">
-            <label for="imagen"></label>
-            <input type="text" placeholder="link imagen" class="form-control" formControlName="imagen">
+            <label for="imagen">Link imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
 
         </div>
 
         <div class="form-group">
+            <label  class="form-label">Fecha</label>
             <input type="date" class="form-control" formControlName="fecha">
         </div>
 
         <div class="form-group">
+            <label  class="form-label">Categoría</label>
             <select formControlName="categoria" class="form-control">
                 <option value="deporte">Deporte</option>
                 <option value="comida">Comida</option>
@@ -42,6 +46,8 @@
                 <option value="videojuegos">Videojuegos</option>
                 <option value="reflexiones">Reflexiones</option>
             </select>
+
+            
         </div>
 
 

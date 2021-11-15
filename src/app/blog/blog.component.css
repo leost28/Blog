@@ -1,0 +1,17 @@
+.todosLosPost{
+    display: column;
+    flex-wrap: wrap;
+}
+
+
+.post{
+    width: 100%;
+    border: 1px solid rgb(71, 99, 255);
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.post img{
+    width: 100%;
+}
