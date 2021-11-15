@@ -13,12 +13,12 @@ export class PostService {
     this.arrPost= [];
   }
 
-  insertPost(newPost: any): void{
+  agregarPost(newPost: any): void{
     this.arrPost.push(newPost);
     console.log(this.arrPost);
   }
 
-  getAll(): Promise<Post[]> { 
+  getAllPosts(): Promise<Post[]> { 
     return new Promise ((resolve, reject) =>{
       resolve(this.arrPost);
     })

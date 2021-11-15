@@ -18,7 +18,7 @@ export class BlogComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.postService.getAll()
+    this.postService.getAllPosts()
     .then(arrPost =>{
       this.todosLosPost = arrPost;
     })

@@ -35,7 +35,7 @@ export class NewComponent implements OnInit {
 
   onSubmit(){
     console.log(this.newPost.value);
-    this.postService.insertPost(this.newPost.value)
+    this.postService.agregarPost(this.newPost.value)
     
   }
 }
