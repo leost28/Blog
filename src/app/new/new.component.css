@@ -1,0 +1,15 @@
+
+.error{
+    color: tomato;
+    font-size: 10px;
+}
+
+.newPost>h3{
+    background-color: rgb(8, 185, 255, 0.4);
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+}
+
+
+
